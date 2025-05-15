@@ -1,0 +1,6 @@
+#vim madhu.yml
+
+#yml code starts here
+- hosts: all  #which includes every server with connection to ansible (if not we can make, -hosts: dev[0] or test[0])
+  ignore_errors: true
+  
