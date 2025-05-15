@@ -1,10 +1,7 @@
-#vim madhu.yml
-
-#yml code starts here
-- hosts: all  #which includes every server with connection to ansible (if not we can make, -hosts: dev[0] or test[0])
+- hosts: all  
   ignore_errors: true
   tasks:
-    - name: installing git #this name can be anything
+    - name: installing git 
       yum: name=git state=present
       tags: a
 
