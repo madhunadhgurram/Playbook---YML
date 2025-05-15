@@ -1,7 +1,3 @@
-# Playbook---YML
-🚀This repository consists of basic yml code for ansible configuration
-
----
 TAGS: by default ansible will execute all tasks sequentially in a playbook.
 we can use tags to execute a specific tasks or to skip a specific tasks.
 
