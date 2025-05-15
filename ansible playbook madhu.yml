@@ -3,4 +3,18 @@
 #yml code starts here
 - hosts: all  #which includes every server with connection to ansible (if not we can make, -hosts: dev[0] or test[0])
   ignore_errors: true
+  tasks:
+    - name: installing git #this name can be anything
+      yum: name=git state=present
+      tags: a
+
+    - name: installing httpd
+      yum: name=httpd state=present
+      tags: b
+
+    - name: starting httpd
+      service: name=httpd state=started
+      tags: c
+
+    - name: 
   
