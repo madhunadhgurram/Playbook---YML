@@ -16,5 +16,10 @@
       service: name=httpd state=started
       tags: c
 
-    - name: 
-  
+    - name: creating a user
+      user: name=madhu state=present
+      tags: d
+
+    - name: copy a file
+      copy: src=index.html dest=/tmp
+      tags: e
