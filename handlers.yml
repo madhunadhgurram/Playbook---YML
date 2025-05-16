@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: installing git
+      yum: name=git state=present
+      notify: starting httpd
+  handlers:
+    - name: starting httpd
+      service: name=httpd state=started
+  
+#one task is depending up on the other task = handlers in ansible
