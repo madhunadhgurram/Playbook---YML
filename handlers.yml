@@ -1,5 +1,5 @@
 - hosts: all
-  tasks:
+  tasks: 
     - name: installing git
       yum: name=git state=present
       notify: starting httpd
