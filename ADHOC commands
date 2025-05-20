@@ -8,4 +8,4 @@ ansible all -a "cat /etc/passwd"
 
 ansible all -a "yum remove git* httpd* -y"  
 
-#this removes entire git and httpd files and configuration
+#this removes entire git and httpd files and configuration 
