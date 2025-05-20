@@ -7,3 +7,5 @@ ansible all -a "systemctl start httpd"
 ansible all -a "cat /etc/passwd"
 
 ansible all -a "yum remove git* httpd* -y"  
+
+#this removes entire git and httpd files and configuration
