@@ -7,4 +7,4 @@
     - name: starting httpd
       service: name=httpd state=started
   
-#one task is depending up on the other task = handlers in ansible
+#one task is depending up on the other task = handlers in ansible 
