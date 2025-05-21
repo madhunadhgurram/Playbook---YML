@@ -2,7 +2,7 @@
   tasks: 
     - name: installing git
       yum: name=git state=present
-      notify: starting httpd
+      notify: starting httpd 
   handlers: 
     - name: starting httpd
       service: name=httpd state=started
