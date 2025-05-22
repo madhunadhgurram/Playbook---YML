@@ -7,7 +7,7 @@
   tasks:
     - name: installing {{a}} 
       yum: name={{a}} state=present
-
+ 
     - name: installing {{b}}
       yum: name={{b}} state=present
 
