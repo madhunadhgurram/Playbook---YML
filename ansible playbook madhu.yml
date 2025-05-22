@@ -1,4 +1,4 @@
-- hosts: all   
+- hosts: all    
   ignore_errors: true
   tasks:
     - name: installing git 
@@ -20,3 +20,6 @@
     - name: copy a file
       copy: src=index.html dest=/tmp
       tags: e
+
+
+#for to check 
