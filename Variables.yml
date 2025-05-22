@@ -1,0 +1,26 @@
+# variables are two types:
+### 1. Static --> Vars can defined inside of playbook and use for multiple times.
+- hosts: all
+  vars:
+    a: git
+    b: httpd
+  tasks:
+    - name: installing {{a}} 
+      yum: name={{a}} state=present
+
+    - name: installing {{b}}
+      yum: name={{b}} state=present
+
+
+
+### 2. Dynamic vars --> Vars will defined outside the playbook and these will use only once.
+- hosts: all
+  vars:
+  tasks:
+    - name: installing {{a}} 
+      yum: name={{a}} state=present
+
+    - name: installing {{b}}
+      yum: name={{b}} state=present
+
+# when executing, --> ansible-playbook madhu.yml --extravars "a=git b=docker"  (So git and docker will install as per a and b in the vars)
