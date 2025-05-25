@@ -6,3 +6,5 @@
     - name: creating ec2 instanace
       ec2:
         region: "us-east-1"
+        count: 3
+        image: "ami"
