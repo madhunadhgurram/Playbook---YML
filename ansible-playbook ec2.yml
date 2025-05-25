@@ -7,4 +7,7 @@
       ec2:
         region: "us-east-1"
         count: 3
-        image: "ami"
+        image: "ami-02ec57994fa0fae21"
+        instance_type: "t2.micro"
+        instance_tags:
+            Name : "abc"
