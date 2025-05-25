@@ -1,3 +1,8 @@
 # install --> yum install pip -y
 # install --> pip install boto
 
+- hosts: localhost
+  tasks:
+    - name: creating ec2 instanace
+      ec2:
+        region: "us-east-1"
