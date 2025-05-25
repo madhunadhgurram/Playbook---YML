@@ -1,1 +1,3 @@
+# install --> yum install pip -y
+# install --> pip install boto
 
