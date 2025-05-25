@@ -1,3 +1,5 @@
+# First,--> "aws configure" in ansible server
+
 # install --> yum install pip -y
 # install --> pip install boto
 
