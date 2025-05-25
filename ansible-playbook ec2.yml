@@ -8,7 +8,7 @@
     - name: creating ec2 instanace
       ec2:
         region: "us-east-1"
-        count: 3
+        count: 3 
         image: "ami-02ec57994fa0fae21"
         instance_type: "t2.micro"
         instance_tags:
