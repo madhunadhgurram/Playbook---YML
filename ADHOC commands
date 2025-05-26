@@ -3,7 +3,7 @@ ansible all -a "yum install git -y"
 ansible all -a "yum install httpd -y"
 
 ansible all -a "systemctl start httpd"
-
+ 
 ansible all -a "cat /etc/passwd"
 
 ansible all -a "yum remove git* httpd* -y"  
