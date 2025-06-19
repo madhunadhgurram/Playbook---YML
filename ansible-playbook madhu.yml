@@ -3,7 +3,7 @@
   tasks:
     - name: installing git 
       yum: name=git state=present
-      tags: a
+      tags: a 
 
     - name: installing httpd
       yum: name=httpd state=present
