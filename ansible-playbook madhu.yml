@@ -1,5 +1,5 @@
 - hosts: all    
-  ignore_errors: true
+  ignore_errors: true 
   tasks:
     - name: installing git 
       yum: name=git state=present
